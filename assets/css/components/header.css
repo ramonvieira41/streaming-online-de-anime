@@ -4,7 +4,7 @@ header {
 	background: #09090f;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0 2.5rem;
 	min-height: 64px;
 	box-sizing: border-box;
@@ -13,7 +13,8 @@ header {
 .logo {
 	display: flex;
 	align-items: center;
-	margin: 0;
+	justify-content: flex-start;
+
 }
 
 .logo a {
@@ -26,6 +27,7 @@ header {
 	height: 48px;
 	width: auto;
 	display: block;
+	
 }
 
 .nav-container {
@@ -38,8 +40,6 @@ header {
 .menu {
 	display: flex;
 	align-items: center;
-	gap: 2.5rem;
-	width: 100%;
 	justify-content: center;
 }
 
@@ -55,6 +55,7 @@ header {
 .menu ul li {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .menu ul li a {
@@ -84,7 +85,7 @@ header {
 	width: 1.1em;
 	height: 1.1em;
 	margin-right: 0.3em;
-	background: url('data:image/svg+xml;utf8,<svg fill="%23b97cff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12l9-8 9 8v8a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4h-4v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>') no-repeat center/contain;
+	background: url('../../images/icons/home.png') no-repeat center/contain;
 }
 .menu ul li:nth-child(2) a::before {
 	content: '';
@@ -92,7 +93,7 @@ header {
 	width: 1.1em;
 	height: 1.1em;
 	margin-right: 0.3em;
-	background: url('data:image/svg+xml;utf8,<svg fill="%23bfc9db" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"/></svg>') no-repeat center/contain;
+	background: url('../../images/icons/category.png') no-repeat center/contain;
 }
 .menu ul li:nth-child(3) a::before {
 	content: '';
@@ -100,31 +101,61 @@ header {
 	width: 1.1em;
 	height: 1.1em;
 	margin-right: 0.3em;
-    background: url('data:image/svg+xml;utf8,<svg fill="%23bfc9db" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4l2-2 2 2h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zM5 7v12h14V7H5z"/></svg>') no-repeat center/contain;
+    background: url('../../images/icons/star.png') no-repeat center/contain;
 }
 
 /* Campo de busca */
 .search-container {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
+
+}
+.search-box {
+	position: relative;
+	display: flex;
+	align-items: center;
 	background: #11131a;
 	border: 2px solid #444857;
 	border-radius: 10px;
-	padding: 0.2rem 1rem;
-	margin-left: 2.5rem;
+
 	min-width: 260px;
 	max-width: 320px;
 	height: 40px;
 	box-sizing: border-box;
 	transition: border 0.2s;
 }
-.search-container:focus-within {
+.search-btn {
+	background: none;
+	border: none;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 0.5rem 0 0;
+	cursor: pointer;
+	height: 32px;
+	width: 32px;
+	transition: background 0.2s;
+	border-radius: 50%;
+}
+.search-btn svg {
+	width: 1.2em;
+	height: 1.2em;
+	fill: #bfc9db;
+	transition: fill 0.2s;
+}
+.search-btn:hover,
+.search-btn:focus {
+	fill: #4082ce;
+}
+.search-box:focus-within {
 	border-color: #4082ce;
 }
-.search-container label {
+.search-box label {
 	display: none;
 }
-.search-container input[type="text"] {
+.search-box input[type="text"] {
 	background: transparent;
 	border: none;
 	outline: none;
@@ -133,29 +164,31 @@ header {
 	width: 100%;
 	padding: 0.2rem 0.5rem;
 }
-.search-container::before {
+.search-box::before {
 	content: '';
 	display: inline-block;
 	width: 1.1em;
 	height: 1.1em;
-	margin-right: 0.5em;
-	background: url('data:image/svg+xml;utf8,<svg fill="%23bfc9db" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke="%23444857" stroke-width="2" fill="none"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke="%23bfc9db" stroke-width="2" stroke-linecap="round"/></svg>') no-repeat center/contain;
 }
 
 @media (max-width: 900px) {
 	header {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: flex-start;
 		padding: 0 1rem;
 	}
+	
+	
 	.nav-container, .menu {
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		gap: 1rem;
 	}
-	.search-container {
+	.search-box {
+		
 		margin-left: 0;
-		width: 100%;
+		width: 300px;
 		max-width: 100%;
 	}
+	
 }
