@@ -1,0 +1,45 @@
+/* ======== Cards de Animes: Em Alta ======== */
+.categories-container {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+	gap: 2rem;
+}
+
+.cards-title {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	margin-left: 3.8rem;
+    margin-top: 1rem;
+	background: url(../../images/icons/em-alta.svg) no-repeat left center;
+	padding-left: 2rem;
+}
+.cards-title-2 {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	margin-left: 3.8rem;
+    margin-top: 1rem;
+
+	padding-left: 2rem;
+}
+
+
+/* Imagens de fundo dos cards */
+.card-1 { background-image: url('../../images/movies/Attackontitan.jpg'); }
+.card-2 { background-image: url('../../images/movies/jujutsu.jpg'); }
+.card-3 { background-image: url('../../images/movies/MyHero.png.webp'); }
+.card-4 { background-image: url('../../images/movies/naruto.png'); }
+.card-5 { background-image: url('../../images/movies/onepiece1.webp'); }
+.card-6 { background-image: url('../../images/movies/tokyoghoul.webp'); }
+.card-7 {background-image: url('../../images/movies/jojo.webp') ;}
+.card-8 {background-image: url('../../images/movies/hxh.jpg') ;}
+.card-9 {background-image: url('../../images/movies/demon-slayer.jpg') ;}
+.card-10 {background-image: url('../../images/movies/dbz.webp') ;}
+
+
+
