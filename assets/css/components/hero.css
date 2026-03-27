@@ -2,9 +2,9 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	min-height: 480px;
-	height: 290px;
-	max-height: 600px;
+	min-height: 30rem;
+	height: 18.125rem;
+	max-height: 37.5rem;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
@@ -22,7 +22,7 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.2) 100%);
-	padding: 48px 0 48px 48px;
+	padding: 3rem 0 3rem 3rem;
 	box-sizing: border-box;
 }
 
@@ -31,7 +31,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	max-width: 600px;
+	max-width: 37.5rem;
 	color: #fff;
 	z-index: 2;
 }
@@ -39,24 +39,24 @@
 .hero-title {
 	font-size: 3.2rem;
 	font-weight: 700;
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 	color: #fff;
 	line-height: 1.1;
-	text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+	text-shadow: 0 0.125rem 1rem rgba(0,0,0,0.7);
 }
 
 .hero-description {
 	font-size: 1.15rem;
 	color: #e0e0e0;
-	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
 	display: block;
-	text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+	text-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.5);
 }
 
 .hero-genres ul {
 	display: flex;
-	gap: 12px;
-	margin: 0 0 28px 0;
+	gap: 0.75rem;
+	margin: 0 0 1.75rem 0;
 	padding: 0;
 	list-style: none;
 }
@@ -65,11 +65,11 @@
 	background: #041f58b3;
 	color: #fff;
 	font-size: 1rem;
-	padding: 7px 18px;
-	border-radius: 18px;
+	padding: 0.4375rem 1.125rem;
+	border-radius: 1.125rem;
 	font-weight: 500;
-	letter-spacing: 0.5px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	letter-spacing: 0.03125rem;
+	box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.15);
 	transition: background 0.2s;
 }
 .hero-genres li:hover {
@@ -77,41 +77,41 @@
 }
 
 .btn-hero {
-	margin-top: 8px;
+	margin-top: 0.5rem;
 }
 
 .btn-hero .btn {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 0.625rem;
 	background: #223ccc;
 	color: #fff;
 	font-size: 1.1rem;
 	font-weight: 600;
-	padding: 14px 38px;
+	padding: 0.875rem 2.375rem;
 	border: none;
-	border-radius: 12px;
-	box-shadow: 0 2px 16px rgba(15, 57, 243, 0.25);
+	border-radius: 0.75rem;
+	box-shadow: 0 0.125rem 1rem rgba(15, 57, 243, 0.25);
 	cursor: pointer;
 	transition: background 0.2s, box-shadow 0.2s;
 	text-decoration: none;
 }
 .btn-hero .btn:hover {
 	background: #486ce2;
-	box-shadow: 0 4px 24px rgba(15,57,243,0.25);
+	box-shadow: 0 0.25rem 1.5rem rgba(15,57,243,0.25);
 }
 
 @media (max-width: 768px) {
 	.hero-section{
-		height: 600px;
+		height: 37.5rem;
 		background-image: url(../../images/banners/hero-mobile.png);
 	}
 	.hero-overlay {
 		padding: 1.5rem;
 	}
 	.content {
-		padding: 20px;
-		padding-top: 100px;
+		padding: 1.25rem;
+		padding-top: 6.25rem;
 	}
 	.content .hero-title {
 		font-size: 1.9rem;
@@ -126,13 +126,26 @@
 	}
 	.btn-hero .btn {
 		font-size: 1.1rem;
-		padding: 12px 28px;
+		padding: 0.75rem 1.75rem;
 	}
+}
+
+@media (max-width: 542px) {
+	.content .hero-description{
+		flex-wrap: wrap;
+		align-items: center;
+		text-align: center;
+	}
+	.hero-genres ul {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
 }
 
 @media (max-width: 480px) {
 	.hero-section{
-		height: 500px;
+		height: 31.25rem;
 		background-image: url(../../images/banners/hero-mobile.png);
 		background-size: cover;
 
@@ -140,12 +153,12 @@
 	.hero-section .content {
 		align-items: center;
 		text-align: center;
-		padding-top: 60px;
+		padding-top: 3.75rem;
 		max-width: 100%;
 	}
 	.content {
-		padding: 16px;
-		padding-top: 80px;
+		padding: 1rem;
+		padding-top: 5rem;
 	}
 	
 
@@ -160,7 +173,7 @@
 	.hero-genres ul {
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 8px;
+		gap: 0.5rem;
 		font-size: 1rem;
 	}
 }

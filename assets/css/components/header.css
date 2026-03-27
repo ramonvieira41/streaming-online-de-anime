@@ -6,7 +6,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 0 2rem;
-	min-height: 64px;
+	min-height: 4rem;
 	box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 .logo img {
-	height: 48px;
+	height: 3rem;
 	width: auto;
 	display: block;
 	
@@ -68,7 +68,7 @@ header {
 	text-decoration: none;
 	transition: color 0.2s;
 	padding: 0.25rem 0.5rem;
-	border-radius: 6px;
+	border-radius: 0.375rem;
 }
 
 
@@ -117,10 +117,10 @@ header {
 	display: flex;
 	align-items: center;
 	background: #11131a;
-	border: 2px solid #444857;
-	border-radius: 10px;
-	width: 250px;
-	height: 40px;
+	border: 0.125rem solid #444857;
+	border-radius: 0.625rem;
+	width: 15.625rem;
+	height: 2.5rem;
 	transition: border 0.2s, width 0.4s;
 	overflow: hidden;
 }
@@ -133,8 +133,8 @@ header {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	height: 32px;
-	width: 32px;
+	height: 2rem;
+	width: 2rem;
 	transition: background 0.2s;
 	border-radius: 50%;
 }
@@ -191,7 +191,7 @@ header {
 	.nav-container, .menu ul {
 		display: flex;
 		align-items: center;
-		gap: 7px;
+		gap: 0.4375rem;
 		margin-top: 0.4rem;
 	}
 	
@@ -200,7 +200,7 @@ header {
 		width: 2.8rem;
 		transition: all 0.4s ease;
 		overflow: hidden;
-		border: 2px solid transparent;
+		border: 0.125rem solid transparent;
 		
 	}
 	.search-box input[type="text"] {
@@ -211,8 +211,8 @@ header {
 		font-size: 0.97rem;
 	}
 	.search-toggle:checked ~ .search-box {
-		width: 180px;
-		border: 2px solid #4082ce;
+		width: 11.25rem;
+		border: 0.125rem solid #4082ce;
 	}
 	.search-toggle:checked ~ .search-box input[type="text"] {
 		width: 100%;
@@ -244,10 +244,10 @@ header {
 	.nav-container, .menu ul {
 		display: flex;
 		align-items: center;
-		gap: 5px;
+		gap: 0.3125rem;
 		margin-top: 0.4rem;
 	}
 	.search-container {
-		margin-bottom: 10px;
+		margin-bottom: 0.625rem;
 	}
 }
