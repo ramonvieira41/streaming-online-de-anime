@@ -1,0 +1,169 @@
+footer {
+	background: #070707;
+	color: #fff;
+	font-family: 'Inter', Arial, sans-serif;
+	margin-top: 20px;
+	border-top: 1px solid #181a20;
+    padding-bottom: 20px;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 20px 32px 24px 32px;
+	gap: 32px;
+	flex-wrap: wrap;
+}
+
+.about {
+	flex: 1.5 1 260px;
+	display: flex;
+	align-items: flex-start;
+	gap: 18px;
+}
+
+.footer-description {
+	max-width: 260px;
+}
+
+.footer-title {
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.footer-about-text {
+	color: #b3b8c5;
+    display: flex;
+	font-size: 0.98rem;
+	line-height: 1.5;
+    margin-bottom: 1px;
+}
+
+.quick-links, .categories {
+	flex: 1 1 160px;
+}
+
+.footer-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-links li {
+	margin-bottom: 5px;
+}
+
+.footer-links a {
+	color: #b3b8c5;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: color 0.2s;
+}
+.footer-links a:hover {
+	color: #0a65ce;
+}
+
+.social-media {
+	flex: 1 1 160px;
+}
+
+.social-icons {
+	display: flex;
+	gap: 16px;
+	margin-top: 8px;
+}
+
+.social-icons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background: #181a20;
+	border-radius: 50%;
+	transition: background 0.2s;
+}
+.social-icons a:hover {
+	background: #23262f;
+}
+.social-icons img {
+	width: 20px;
+	height: 20px;
+	filter: brightness(0.8);
+	transition: filter 0.2s;
+}
+.social-icons a:hover img {
+	filter: brightness(1.2);
+}
+
+/* Copyright and terms */
+.copyright-section {
+	border-top: 1px solid #181a20;
+	margin-top: 1px;
+	padding: 12px 32px 10px 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 0.98rem;
+	color: #b3b8c5;
+}
+.copyright {
+	color: #b3b8c5;
+	font-size: 0.98rem;
+}
+.terms {
+	display: flex;
+    gap: 22px;
+}
+.terms a {
+	color: #b3b8c5;
+	text-decoration: none;
+	font-size: 0.98rem;
+	transition: color 0.2s;
+}
+.terms a:hover {
+	color: #0a65ce;
+}
+
+@media (max-width: 768px) {
+	.footer-container {
+        display: flex;
+		gap: 32px;
+		padding: 32px 16px 16px 16px;
+	}
+	.copyright-section {
+		flex-direction: column;
+		gap: 10px;
+		padding: 16px 16px 8px 16px;
+	}
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: 3px;
+    }
+
+    .about, .quick-links, .social-media {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-about-text {
+        margin-bottom: 10px;
+    }
+
+    .footer-title {
+        margin-bottom: 5px;
+    }
+}

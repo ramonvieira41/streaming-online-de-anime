@@ -7,13 +7,7 @@
     <meta name="description"
         content="Assista animes onlines em alta qualidade, sempre atualizado com os lançamentos mais recentes. Encontre seus animes favoritos e descubra novos títulos para maratonar.">
     <title>Streaming Animes online</title>
-    <link rel="stylesheet" href="assets/css/components/reset.css">
-    <link rel="stylesheet" href="assets/css/components/variables.css">
-    <link rel="stylesheet" href="assets/css/components/base.css">
-    <link rel="stylesheet" href="assets/css/components/header.css">
-
-    <link rel="stylesheet" href="assets/css/components/hero.css">
-    <link rel="stylesheet" href="assets/css/components/categories.css">
+    <link rel="stylesheet" href="assets/css/components/main.css">
 
 </head>
 
@@ -37,12 +31,12 @@
         </nav>
 
         <nav class="search-container">
+            <input type="checkbox" id="search-toggle" class="search-toggle" hidden>
             <form class="search-box">
-                <button class="search-btn" type="submit">
-                    <img src="./assets/images/icons/search.svg" alt="Buscar">
-                </button>
-                <input type="text" id="search" placeholder="Digite o nome do anime..." />
-
+                <label for="search-toggle" class="search-btn" tabindex="0">
+                    <img src="/assets/images/icons/search.svg" alt="Buscar" class="search-icon">
+                </label>
+                <input type="text" id="search" placeholder="Digite um nome" />
             </form>
         </nav>
     </header>
@@ -202,41 +196,80 @@
                     </div>
                 </div>
 
-                    <div class=" card card-9">
-                        <div class="card-overlay">
-                            <div class="card-rating-year">
-                                <p class="rating">⭐ 8.5</p>
-                                <p class="year">2019</p>
-                            </div>
-                            <div class="genres">
-                                <span class="genre">Ação</span>
-                                <span class="genre">Shounen</span>
-                                <span class="genre">Sobrenatural</span>
-                            </div>
-                            <div class="card-name">Demon Slayer</div>
+                <div class=" card card-9">
+                    <div class="card-overlay">
+                        <div class="card-rating-year">
+                            <p class="rating">⭐ 8.5</p>
+                            <p class="year">2019</p>
                         </div>
+                        <div class="genres">
+                            <span class="genre">Ação</span>
+                            <span class="genre">Shounen</span>
+                            <span class="genre">Sobrenatural</span>
+                        </div>
+                        <div class="card-name">Demon Slayer</div>
                     </div>
+                </div>
 
-                    <div class=" card card-10">
-                        <div class="card-overlay">
-                            <div class="card-rating-year">
-                                <p class="rating">⭐ 8.8</p>
-                                <p class="year">1989</p>
-                            </div>
-                            <div class="genres">
-                                <span class="genre">Ação</span>
-                                <span class="genre">Aventura</span>
-                                <span class="genre">Shounen</span>
-                            </div>
-                            <div class="card-name">Dragon Ball Z</div>
+                <div class=" card card-10">
+                    <div class="card-overlay">
+                        <div class="card-rating-year">
+                            <p class="rating">⭐ 8.8</p>
+                            <p class="year">1989</p>
                         </div>
+                        <div class="genres">
+                            <span class="genre">Ação</span>
+                            <span class="genre">Aventura</span>
+                            <span class="genre">Shounen</span>
+                        </div>
+                        <div class="card-name">Dragon Ball Z</div>
                     </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
+        <section class="footer-container">
+            <div class="about">
+                <div class="footer-description">
+                    <h4 class="footer-title">Sobre Nós</h4>
+                    <p class="footer-about-text">Somos uma plataforma de streaming dedicada a oferecer uma ampla
+                        variedade de animes para os fãs
+                        de todo o mundo. </p>
+                </div>
+            </div>
 
+            <div class="quick-links">
+                <h4 class="footer-title">Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media">
+                <h4 class="footer-title">Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="/assets/images/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="/assets/images/icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="/assets/images/icons/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright-section">
+            <div class="copyright">
+                <p>© 2026 Streaming Animes. Todos os direitos reservados</p>
+            </div>
+            <div class="terms">
+                <p><a href="#">Termos de Uso</a>
+                </p>
+                <p><a href="#">Política de Privacidade</a></p>
+            </div>
+        </section>
     </footer>
 </body>
 
